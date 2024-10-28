@@ -92,6 +92,10 @@ body: JSON.stringify(user)
 .then(res => res.json())
 .then(data => {
   console.log(data);
+  if(data.insertedId){
+    alert('users aadded successfully')
+    form.reset();
+  }
 })
 }
   return(
